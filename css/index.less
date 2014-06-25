@@ -16,18 +16,65 @@ body {
    box-shadow: 0 0px 10px #fff;
 
   .header {
-    min-height: 180px;
-    background: #ffffff;
-    background-image: url("../img/header.png");
+    min-height: 180px;background: -ms-linear-gradient(top,  rgba(183,183,183,0.65) 0%,rgba(183,183,183,0.64) 1%,rgba(0,0,0,0) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(183,183,183,0.65) 0%,rgba(183,183,183,0.64) 1%,rgba(0,0,0,0) 100%); /* W3C */
+  //  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6b7b7b7', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
 
-    background-size: 100% auto;
+ //   background: #808080;
+    background-image: url("../img/header.png"), -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+    background-image: url("../img/header.png"), -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+    background-image: url("../img/header.png"), -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+    background-image: url("../img/header.png"), -o-radial-gradient(center, ellipse cover,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Opera 12+ */
+    background-image: url("../img/header.png"), -ms-radial-gradient(center, ellipse cover,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* IE10+ */
+    background-image: url("../img/header.png"), radial-gradient(ellipse at center,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* W3C */
+
+
+
+
+    //  background-size: 100% auto;
+    position: relative;
     .contact{
       padding: 16px;
       margin-left: 50%;
       color: blueviolet;
       font-weight: bold;
+
       p{
         margin-top: 10px;
+      }
+      .bokmark{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        color: #000000;
+        .item{
+          display: inline-block;
+          position: relative;
+          margin-left: -17px;
+          text-align: center;
+          cursor: pointer;
+          &>div{
+            position: relative;
+            width: 100px;
+            height: 25px;
+            &>svg{
+              position: absolute;
+              top:0;
+              left: 0;
+            }
+            &>div{
+              //padding: 5px 10px;
+          //    padding-right: 15px;
+              padding-top: 0px;
+              top: 4px;
+              right: 20px;
+              position: absolute;
+              display: inline-block;
+            }
+          }
+
+        }
+
       }
     }
   }
