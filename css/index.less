@@ -5,15 +5,26 @@
 
 body {
   width: 100%;
-  background: #000000;
+  background: rgb(0,0,0); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(0,0,0,1) 0%, rgba(73,68,68,1) 29%, rgba(95,109,114,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,1)), color-stop(29%,rgba(73,68,68,1)), color-stop(100%,rgba(95,109,114,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(73,68,68,1) 29%,rgba(95,109,114,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(73,68,68,1) 29%,rgba(95,109,114,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(73,68,68,1) 29%,rgba(95,109,114,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(0,0,0,1) 0%,rgba(73,68,68,1) 29%,rgba(95,109,114,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#5f6d72',GradientType=0 ); /* IE6-9 */
+
+  font-family: Arial, sans-serif;
+  background-attachment: fixed;
 }
 
 .main {
   width: 1000px;
   background: #ffffff;
   min-height: 200px;
-  margin: 10px auto;
+  margin: 0px auto;
   box-shadow: 0 0px 10px #fff;
+
 
   .header {
     min-height: 180px;
@@ -28,14 +39,20 @@ body {
     background-image: url("../img/header.png"), -o-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%); /* Opera 12+ */
     background-image: url("../img/header.png"), -ms-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%); /* IE10+ */
     background-image: url("../img/header.png"), radial-gradient(ellipse at center, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%); /* W3C */
-
+    background-repeat: no-repeat;
+    background-position: 0 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px #dbdbdb;
     //  background-size: 100% auto;
-    position: relative;
+    position: fixed;
+    width: 1000px;
+    border-bottom: 1px solid #000000;
     .contact {
-      padding: 16px;
+      padding: 40px;
       margin-left: 50%;
-      color: blueviolet;
+      //color: blueviolet;
       font-weight: bold;
+      text-align: right;
 
       p {
         margin-top: 10px;
@@ -46,6 +63,7 @@ body {
         right: 0;
         color: #000000;
         height: 25px;
+
         .item {
           display: inline-block;
           position: relative;
@@ -81,30 +99,67 @@ body {
     text-align: justify;
 
    // padding: 25px;
-    .scroll-nav__wrapper{
-      background: rgb(224,243,250); /* Old browsers */
-      background: -moz-linear-gradient(top,  rgba(224,243,250,1) 0%, rgba(216,240,252,1) 50%, rgba(184,226,246,1) 51%, rgba(182,223,253,1) 100%); /* FF3.6+ */
-      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(224,243,250,1)), color-stop(50%,rgba(216,240,252,1)), color-stop(51%,rgba(184,226,246,1)), color-stop(100%,rgba(182,223,253,1))); /* Chrome,Safari4+ */
-      background: -webkit-linear-gradient(top,  rgba(224,243,250,1) 0%,rgba(216,240,252,1) 50%,rgba(184,226,246,1) 51%,rgba(182,223,253,1) 100%); /* Chrome10+,Safari5.1+ */
-      background: -o-linear-gradient(top,  rgba(224,243,250,1) 0%,rgba(216,240,252,1) 50%,rgba(184,226,246,1) 51%,rgba(182,223,253,1) 100%); /* Opera 11.10+ */
-      background: -ms-linear-gradient(top,  rgba(224,243,250,1) 0%,rgba(216,240,252,1) 50%,rgba(184,226,246,1) 51%,rgba(182,223,253,1) 100%); /* IE10+ */
-      background: linear-gradient(to bottom,  rgba(224,243,250,1) 0%,rgba(216,240,252,1) 50%,rgba(184,226,246,1) 51%,rgba(182,223,253,1) 100%); /* W3C */
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0f3fa', endColorstr='#b6dffd',GradientType=0 ); /* IE6-9 */
 
+    .scroll-nav__wrapper{
+      background: rgb(174,188,191); /* Old browsers */
+      background: -moz-linear-gradient(top,  rgba(174,188,191,1) 0%, rgba(110,119,116,1) 50%, rgba(10,14,10,1) 51%, rgba(10,8,9,1) 100%); /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(174,188,191,1)), color-stop(50%,rgba(110,119,116,1)), color-stop(51%,rgba(10,14,10,1)), color-stop(100%,rgba(10,8,9,1))); /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top,  rgba(174,188,191,1) 0%,rgba(110,119,116,1) 50%,rgba(10,14,10,1) 51%,rgba(10,8,9,1) 100%); /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top,  rgba(174,188,191,1) 0%,rgba(110,119,116,1) 50%,rgba(10,14,10,1) 51%,rgba(10,8,9,1) 100%); /* Opera 11.10+ */
+      background: -ms-linear-gradient(top,  rgba(174,188,191,1) 0%,rgba(110,119,116,1) 50%,rgba(10,14,10,1) 51%,rgba(10,8,9,1) 100%); /* IE10+ */
+      background: linear-gradient(to bottom,  rgba(174,188,191,1) 0%,rgba(110,119,116,1) 50%,rgba(10,14,10,1) 51%,rgba(10,8,9,1) 100%); /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aebcbf', endColorstr='#0a0809',GradientType=0 ); /* IE6-9 */
+      position: fixed;
+      top: 0;
+      left: 50%;
+      width: 1000px;
+      margin-left: -500px;
+      h2{
+        text-align: left;
+      }
+
+      ol{
+        text-align: center;
+      }
       li {
         list-style-type: none; /* Убираем маркеры */
-        padding: 5px;
+        padding: 7px 5px;
         display: inline-block;
+        font-size: 14px;
+        &:hover{
+          text-shadow: 0 0 2px #fff, 0 0 10px #fff,0 0 10px #fff;
+        }
       }
       a{
+        text-decoration: none;
+        color: #ffffff;
         padding: 5px;
+        font-weight: bold;
       }
     }
     .sprite{
       text-indent: 16px;
       min-height: 1000px;
-      padding: 30px;
+      padding: 30px 40px;
       text-indent: 16px;
+   padding-top: 180px;
+      section{
+        margin-top: 20px;
+      }
+      section>div{
+        margin-top: 15px;
+      }
+      ul{
+        color: #3e3e3e;
+        margin-top: 10px;
+        margin-left: 20px;
+        font-weight: bold;
+        li{
+          margin-left: 40px;
+          font-weight: normal;
+          list-style: disc;
+        }
+      }
       p {
         margin-top: 10px;
       }
@@ -117,4 +172,38 @@ body {
   .footer {
     padding: 25px;
   }
+}
+@media (max-width: 1000px){
+  .main{
+    width: 100%;
+
+    .header{
+      width: 100%;
+
+      .contact {
+        padding: 40px 10px;
+
+        //color: blueviolet;
+        font-weight: bold;
+        text-align: right;
+      }
+    }
+    .content{
+      .scroll-nav__wrapper{
+        width: 100%;
+        margin-left: -50%;
+      }
+      .sprite{
+        padding: 10px;
+      }
+    }
+
+
+  }
+
+
+}
+
+.bold{
+  font-weight: bold;
 }
