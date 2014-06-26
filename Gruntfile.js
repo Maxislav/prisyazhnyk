@@ -51,7 +51,7 @@ module.exports = function (grunt) {
 					"css/index.less",
 					'js/index.js'
                 ],
-                tasks: ['less'],
+                tasks: ['less', 'uglify'],
                 options: {
                     nospawn: true
                 }
