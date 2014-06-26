@@ -48,7 +48,8 @@ module.exports = function (grunt) {
             styles: {
                 // Which files to watch (all .less files recursively in the less directory)
                 files: [
-					"css/index.less"
+					"css/index.less",
+					'js/index.js'
                 ],
                 tasks: ['less'],
                 options: {
