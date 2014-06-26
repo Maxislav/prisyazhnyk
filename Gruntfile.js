@@ -14,7 +14,8 @@ module.exports = function (grunt) {
                     // Результат задачи concat
                     'build/scripts.min.js': [
                         "lib/jquery/jquery-1.11.1.js",
-						'lib/jquery/jquery.scrollNav.js'
+						'lib/jquery/jquery.scrollNav.js',
+						'js/index.js'
 
                     ]
 
