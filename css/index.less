@@ -47,6 +47,7 @@ body {
         bottom: 0;
         right: 0;
         color: #000000;
+        height: 25px;
         .item{
           display: inline-block;
           position: relative;
@@ -82,6 +83,17 @@ body {
     text-align: justify;
     text-indent: 16px;
     padding: 25px;
+    background: -moz-linear-gradient(top,  rgba(238,238,238,0.65) 0%, rgba(255,255,255,0.72) 21%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(238,238,238,0.65)), color-stop(21%,rgba(255,255,255,0.72)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(238,238,238,0.65) 0%,rgba(255,255,255,0.72) 21%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(238,238,238,0.65) 0%,rgba(255,255,255,0.72) 21%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(238,238,238,0.65) 0%,rgba(255,255,255,0.72) 21%,rgba(255,255,255,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(238,238,238,0.65) 0%,rgba(255,255,255,0.72) 21%,rgba(255,255,255,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6eeeeee', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+    background-size: 100% 200px;
+    background-repeat: no-repeat;
+    min-height: 1000px;
     p{
       margin-top: 10px;
     }
