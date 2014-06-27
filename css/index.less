@@ -42,11 +42,15 @@ body {
     width: 1000px;
     border-bottom: 1px solid #000000;
     .contact {
-      padding: 40px;
-      margin-left: 50%;
+      padding-right: 40px;
+      padding-top: 40px;
+      padding-bottom: 20px;
+
       //color: blueviolet;
       font-weight: bold;
-      text-align: right;
+      text-align: left;
+      width: 260px;
+      float: right;
 
       p {
         margin-top: 10px;
@@ -189,11 +193,11 @@ body {
       width: 100%;
 
       .contact {
-        padding: 40px 10px;
+        padding: 40px 10px 10px 10px;
 
         //color: blueviolet;
         font-weight: bold;
-        text-align: right;
+        //text-align: right;
       }
     }
     .content{
@@ -205,13 +209,34 @@ body {
         padding: 10px;
       }
     }
-
-
   }
-
-
 }
 
+@media print
+{
+ .scroll-nav__wrapper
+  {
+    display: none !important;
+  }
+  .main{
+    .header{
+      position: relative;
+      height: 180px;
+    }
+    .content{
+      position: relative;
+
+    }
+  }
+  .metric{
+    display: none;
+  }
+}
 .bold{
   font-weight: bold;
+}
+.metric{
+  position: fixed;
+  right: 0;
+  top:0;
 }
