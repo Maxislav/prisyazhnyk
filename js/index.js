@@ -1,9 +1,9 @@
 $(document).ready(function(){
 	$('.post__article').scrollNav({
 		headlineText: '',
-		topLinkText: 'Home',
+		topLinkText: 'Top',
 		//fixedMargin: 140,
-		scrollOffset: 180,
+		scrollOffset: 180
 	});
 
 })
